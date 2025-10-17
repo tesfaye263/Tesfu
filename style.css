@@ -1,0 +1,310 @@
+*{
+ margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+header .container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid hotpink;
+}
+section{
+  background: #fff;
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  
+}
+
+.log{
+  border-radius: 50%;
+  height: 30px;
+  width:30px;
+  } 
+/*.navbar {
+  list-style: none;
+  align-items: center; 
+  gap: 10px;
+  display: flex;
+ /* margin-right: 30px;*/
+/*}*/
+/*.social-navbar
+{
+  list-style: none;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}*/
+ li{
+  align-items: center;
+  display: flex;
+   font-size: 13px;
+}  
+li a{
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  color:blue;
+  gap:8px;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+nav a{
+  text-decoration: none;
+  transition: color 0.3s ease;
+  flex-direction: row;
+  margin: 0 5px;
+  font-weight: 500;
+  color: #333;
+  font-size: 15px;
+  gap: 10px;
+}
+ a:hover{
+  color: red;
+}
+
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  flex-direction: row;
+}
+
+.button:hover {
+  background: #1e40af;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+  font-size: 14px;
+}
+mark{
+  color: skyblue;
+  border: 2px solid hotpink;
+}
+
+
+
+/* ---------- Global Styles ---------- */
+/** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------- Header & Navbar ---------- */
+/*header {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+header .container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.logo{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #2563eb;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+/* ---------- Section ---------- */
+/*section {
+  background: #fff;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* ---------- Buttons ---------- */
+/*.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #1e40af;
+}
+
+/* ---------- Social Media ---------- */
+/*.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.social.tiktok { background-color: #000000; }
+.social.youtube { background-color: #ff0000; }
+.social.linkedin { background-color: #0077b5; }
+.social.telegram { background-color: #229ED9; }
+
+.social:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ---------- Footer ---------- */
+/*footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+  font-size: 14px;
+}*/
+
+/* ---------- Responsive ---------- */
+/*@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav {
+    margin-top: 10px;
+  }
+}
+
+
+/* ---------- Responsive Navbar (Hamburger) ---------- */
+/*.menu-toggle {
+  display: none;
+  font-size: 1.6rem;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f8fafc;
+    text-align: center;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  nav.active {
+    display: flex;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}*/
+
+
+/* Definition list styling */
+.project-list dt {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #2563eb;
+}
+
+.project-list dd {
+  margin: 8px 0 16px 20px;
+  line-height: 1.6;
+  color: #555;
+  background: #f3f4f6;
+  border-left: 4px solid #2563eb;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.project-list dd:hover {
+  background: #e0f2fe;
+}
+.about li{
+  margin: 5px 10px;
+  list-style-type: disc;
+}
